@@ -7,7 +7,7 @@ let relays = [
     {
         name: 'mk',
         channel_id: '849455257472991243',   // stocks-only-chat
-        keywords: ['god.3856', 'jessica_the_mini_slayer', 'tarch'],
+        keywords: ['god.3856'],
     },
     {
         name: 'mk',
