@@ -73,7 +73,7 @@ while (true) {
 
             let author = message.author.global_name ?? message.author.username
             let content = content_translated ?? message.content
-            let output = `[${relay.name}:${author}] ${content}`
+            let output = `\`[${relay.name}:${author}] ${content}\``
 
             console.info(output)
 
@@ -88,5 +88,5 @@ while (true) {
         }
     }
 
-    await new Promise (function (resolve) { setTimeout(resolve, 60_000)})
+    await new Promise (function (resolve) { setTimeout(resolve, 60_000) })
 }
