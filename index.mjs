@@ -6,17 +6,17 @@ let output_channel_id = '1139364504594042940'
 let relays = [
     {
         name: 'mk',
-        channel_id: '849455257472991243',   // stocks-only-chart
+        channel_id: '849455257472991243',   // stocks-only-chat
         keywords: ['god.3856'],
     },
     {
         name: 'mk',
-        channel_id: '1013467791640252426',  // noobs-trading-live
+        channel_id: '1013467791640252426',  // live-noob-trading
         keywords: ['god.3856'],
     },
     {
         name: 'ts',
-        channel_id: '1039199140325896283',  // topstep-chiense
+        channel_id: '1039199140325896283',  // topstep-chinese
         keywords: ['edwardlai'],
         translate: true,
     },
