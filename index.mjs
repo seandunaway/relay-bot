@@ -7,12 +7,17 @@ let relays = [
     {
         name: 'mk',
         channel_id: '849455257472991243',   // stocks-only-chat
-        keywords: ['god.3856'],
+        keywords: ['god.3856', 'jessica_the_mini_slayer', 'tarch'],
     },
     {
         name: 'mk',
         channel_id: '1013467791640252426',  // live-noob-trading
         keywords: ['god.3856'],
+    },
+    {
+        name: 'ttt',
+        channel_id: '1066547447909859339',  // main-chat
+        keywords: ['coinfox'],
     },
     {
         name: 'ts',
