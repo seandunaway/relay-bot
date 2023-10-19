@@ -88,5 +88,5 @@ while (true) {
         }
     }
 
-    await new Promise (function (resolve) { setTimeout(resolve, 2_000)})
+    await new Promise (function (resolve) { setTimeout(resolve, 60_000)})
 }
