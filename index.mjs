@@ -7,7 +7,7 @@ let relays = [
     {
         name: 'mk',
         channel_id: '849455257472991243',   // stocks-only-chart
-        keywords: ['god.3856', 'sean', 'nick', 'az4dan'],
+        keywords: ['god.3856'],
     },
     {
         name: 'mk',
