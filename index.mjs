@@ -7,22 +7,26 @@ let relays = [
     {
         name: 'mk',
         channel_id: '849455257472991243',   // stocks-only-chat
-        keywords: ['god.3856'],
+        keywords: ['god.3856', 'sean'],
+        excludes: ['1070055942110060704'],  // sean userid
     },
     {
         name: 'mk',
         channel_id: '1013467791640252426',  // live-noob-trading
         keywords: ['god.3856'],
+        excludes: [],
     },
     {
         name: 'ttt',
         channel_id: '1066547447909859339',  // main-chat
         keywords: ['coinfox'],
+        excludes: ['tr-'],
     },
     {
         name: 'ts',
         channel_id: '1039199140325896283',  // topstep-chinese
-        keywords: ['edwardlai'],
+        keywords: ['edward#8285', 'edwardlai'],
+        excludes: [],
         translate: true,
     },
 ]
@@ -57,12 +61,20 @@ while (true) {
             ]
             for (let message_field_content of message_field_contents) {
                 if (!message_field_content) continue
-
                 let haystack = message_field_content.toLowerCase()
                 for (let keyword of relay.keywords) {
                     let needle = keyword.toLowerCase()
                     if (haystack.includes(needle))
                         filter = false
+                }
+            }
+            for (let message_field_content of message_field_contents) {
+                if (!message_field_content) continue
+                let haystack = message_field_content.toLowerCase()
+                for (let exclude of relay.excludes) {
+                    let needle = exclude.toLowerCase()
+                    if (haystack.includes(needle))
+                        filter = true
                 }
             }
 
@@ -93,5 +105,5 @@ while (true) {
         }
     }
 
-    await new Promise (function (resolve) { setTimeout(resolve, 60_000) })
+    await new Promise (function (resolve) { setTimeout(resolve, 300_000) })
 }
