@@ -6,26 +6,26 @@ let output_channel_id = '1139364504594042940'
 let relays = [
     {
         name: 'mk',
-        channel_id: '849455257472991243',   // stocks-only-chat
-        keywords: ['god.3856', 'sean'],
-        excludes: ['1070055942110060704'],  // sean userid
+        channel_id: '849455257472991243', // stocks-only-chat
+        keywords: ['sean', '966755728297709579'], // g
+        excludes: ['1070055942110060704'], // sean userid
     },
     {
         name: 'mk',
-        channel_id: '1013467791640252426',  // live-noob-trading
-        keywords: ['god.3856'],
+        channel_id: '1013467791640252426', // live-noob-trading
+        keywords: ['966755728297709579'], // g
         excludes: [],
     },
     {
         name: 'ttt',
-        channel_id: '1066547447909859339',  // main-chat
-        keywords: ['coinfox'],
+        channel_id: '1066547447909859339', // main-chat
+        keywords: ['531333398711762944'], // coinfox
         excludes: ['tr-'],
     },
     {
         name: 'ts',
-        channel_id: '1039199140325896283',  // topstep-chinese
-        keywords: ['edward', 'edwardlai'],
+        channel_id: '1039199140325896283', // topstep-chinese
+        keywords: ['729348670721622026', '788937987311534090'], // edward
         excludes: [],
         translate: true,
     },
