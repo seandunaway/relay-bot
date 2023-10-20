@@ -49,7 +49,7 @@ while (true) {
         for (let i = messages_json.length - 1; i >= 0; i--) {
             let message = messages_json[i]
 
-            if (message.id < last_message_ids[relay.channel_id]) continue
+            if (message.id <= last_message_ids[relay.channel_id]) continue
             if (!message.content) continue
 
             let filter = true
