@@ -25,7 +25,7 @@ let relays = [
     {
         name: 'ts',
         channel_id: '1039199140325896283',  // topstep-chinese
-        keywords: ['edward#8285', 'edwardlai'],
+        keywords: ['edward', 'edwardlai'],
         excludes: [],
         translate: true,
     },
@@ -105,5 +105,5 @@ while (true) {
         }
     }
 
-    await new Promise (function (resolve) { setTimeout(resolve, 300_000) })
+    await new Promise (function (resolve) { setTimeout(resolve, 60_000) })
 }
