@@ -8,7 +8,7 @@ let relays = [
         name: 'mk',
         channel_id: '849455257472991243', // stocks-only-chat
         keywords: ['sean', '966755728297709579'], // g
-        excludes: ['1070055942110060704'], // sean userid
+        excludes: ['1070055942110060704'], // sean
     },
     {
         name: 'mk',
