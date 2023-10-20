@@ -50,6 +50,8 @@ while (true) {
             let message = messages_json[i]
 
             if (message.id <= last_message_ids[relay.channel_id]) continue
+            last_message_ids[relay.channel_id] = message.id
+
             if (!message.content) continue
 
             let filter = true
@@ -100,8 +102,6 @@ while (true) {
                 body: JSON.stringify({content: output}),
             })
             let submit_json = submit_response.json()
-
-            last_message_ids[relay.channel_id] = message.id
         }
     }
 
